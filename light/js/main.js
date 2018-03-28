@@ -1,27 +1,3 @@
-//мой 
-/*var yourBudget 	= prompt ("Ваш бюджет?");
-var nameStore 	= prompt ("Название Вашего магазина?");
-var mainList 		= {};
-var open 				= 'open';
-var shopGoods 	= [];
-shopGoods[0] 		= prompt ("Какой тип товаров будем продавать?");
-shopGoods[1] 		= prompt ("Какой тип товаров будем продавать?");
-shopGoods[2] 		= prompt ("Какой тип товаров будем продавать?");
-
-mainList = {
-	yourBudget,
-	nameStore,
-	shopGoods,
-	open: true,
-	employers: {
-		name: 'Ivan',
-		name2: 'Sergey'
-	}
-};
-
-console.log(mainList);
-alert('Ваш бюджет на 1 день' + yourBudget/30);*/
-
 //Иван
 		let money 			= prompt ("Ваш бюджет?");
 		let nameShop 		= prompt ("Название Вашего магазина?");
@@ -34,22 +10,7 @@ alert('Ваш бюджет на 1 день' + yourBudget/30);*/
 		open: false,
 		employers: {}
 	};
-		//установили шаг цикла при помощи инкремента
-		/*let i = 0;
-		for (; i < 5; i++)
-			alert( i !== 5 )*/
-
-			/*		while (n < 5) {
-					  n++;
-					}*/
-
-			/*	do {
-		  		i = i + 1;
-		  		result = result + i;
-					} while (i < 5);
-		}*/
 		
-
 	for (let i = 0; i < 5; i++) {
 
 		let a = prompt ("Какой тип товаров будем продавать?");
