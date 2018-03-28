@@ -5,19 +5,6 @@
 				price
 //обьявление функции
 
-	function discount() {
-			price = prompt("У нас промоакция, введите вашу сумму"); //значение переменных
-			//операция сравнения ||-или
-			while (isNaN(price) || price == "" || price == null) {
-					alert('Вы не ввели сумму скидка сгорела');
-					if (!price) break; // (*)
-
-			}
-			alert('Ваша скидка' + price*0.80);
-		}
-		discount(); //вызов функции
-
-
 		function start() {
 			money = prompt("Ваш бюджет?"); //значение переменных
 			//операция сравнения ||-или
@@ -27,7 +14,7 @@
 
 			nameShop 		= prompt("Название Вашего магазина?").toUpperCase();//с заглавной буквы toUpperCase();
 		}
-		/*start();*/ //вызов функции
+		start(); //вызов функции
 
 	let mainList = {
 		budget: money,
@@ -53,8 +40,9 @@
 					}	
 				}
 	}
-/*	chooseGoods();*/
+chooseGoods();
 
+// сотрудники
 function employers() {
 				for (let i = 0; i < 4; i++) {
 
@@ -74,6 +62,20 @@ function employers() {
 	}
 	employers();
 
+	//скидка
+	function discount() {
+			price = prompt("У нас промоакция, введите вашу сумму"); //значение переменных
+			//операция сравнения ||-или
+			while (isNaN(price) || price == "" || price == null) {
+					alert('Вы не ввели сумму скидка сгорела');
+					if (!price) break; // (*)
+
+			}
+			alert('Ваша скидка' + price*0.80);
+		}
+		discount(); //вызов функции
+
+// время работы
 	function workTime(time) {
 
 		if (time < 0) {
