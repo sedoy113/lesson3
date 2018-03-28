@@ -52,7 +52,8 @@ function employers() {
 					if ((typeof(a)) === 'string'  &&  (typeof(a)) !== null && a,b !=+ '' && a.length < 50 ) {
 						mainList.employers.name = a;
 						mainList.employers.number = b;
-						alert( mainList.employers.name+ ': ' + mainList.employers.number);					
+						mainList.employers[i] = a + b;
+						/*alert( mainList.employers.name+ ': ' + mainList.employers.number);*/					
 								
 					} else { 
 						i = i -1;
