@@ -4,6 +4,20 @@
 				time,
 				price
 //обьявление функции
+
+	function discount() {
+			price = prompt("У нас промоакция, введите вашу сумму"); //значение переменных
+			//операция сравнения ||-или
+			while (isNaN(price) || price == "" || price == null) {
+					alert('Вы не ввели сумму скидка сгорела');
+					if (!price) break; // (*)
+
+			}
+			alert('Ваша скидка' + price*0.80);
+		}
+		discount(); //вызов функции
+
+
 		function start() {
 			money = prompt("Ваш бюджет?"); //значение переменных
 			//операция сравнения ||-или
@@ -12,9 +26,8 @@
 			}
 
 			nameShop 		= prompt("Название Вашего магазина?").toUpperCase();//с заглавной буквы toUpperCase();
-			time 				= 21;
 		}
-		start(); //вызов функции
+		/*start();*/ //вызов функции
 
 	let mainList = {
 		budget: money,
@@ -40,7 +53,26 @@
 					}	
 				}
 	}
-	chooseGoods();
+/*	chooseGoods();*/
+
+function employers() {
+				for (let i = 0; i < 4; i++) {
+
+					let a = prompt ("Введите имя сотрудника");
+					let b = prompt ("Введите номер сотрудника");
+				
+					if ((typeof(a)) === 'string'  &&  (typeof(a)) !== null && a,b !=+ '' && a.length < 50 ) {
+						mainList.employers.name = a;
+						mainList.employers.number = b;
+						alert( mainList.employers.name+ ': ' + mainList.employers.number);					
+								
+					} else { 
+						i = i -1;
+						 alert('Введите имя!');
+					}	
+				}
+	}
+	employers();
 
 	function workTime(time) {
 
@@ -54,7 +86,7 @@
 						console.log('В сутках только 24 часа!');
 					}
 	}
-	workTime();
+	/*workTime(19);*/
 
 	console.log(mainList);
 	alert('Ваш бюджет на 1 день' + money/30);
